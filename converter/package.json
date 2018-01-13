@@ -1,0 +1,20 @@
+{
+  "name": "converter",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "start": "node ./app/server.js",
+    "debug": "node --inspect=5858 --inspect-brk ./app/server.js",
+    "test:debug": "mocha --reporter spec --inspect=5858 --inspect-brk ./test/*.js"
+  },
+  "author": "Ibrahim Seckin",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "express": "^4.16.2",
+    "mocha": "^4.0.1",
+    "request": "^2.83.0"
+  }
+}
